@@ -1,0 +1,133 @@
+/* The side navigation menu */
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: white; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: ; /* 0.5 second transition effect to slide in the sidenav */
+  border-right: 1px solid;
+  
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  position: absolute;
+  transition: 0s;
+  color:black;
+  padding:20px;
+  font-family: geneva;
+  font-size: 8pt;
+
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  left: 0px;
+  font-size: 12px;
+  font-family: Geneva;
+  text-decoration: underline;
+  font-weight: 900;
+  
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s;
+  padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+p{
+  position: absolute;
+  top: 10;
+  left: 20px;
+  font-size: 12px;
+  font-family: Geneva;
+  font-weight: 900;
+}
+#main {
+  text-align: center;
+}
+
+/*flickity-stuff*/
+
+html {
+ box-sizing: border-box;
+}
+ *, *:before, *:after;{
+   box-sizing: inherit;
+ }
+img {
+ max-width: 30%;
+ height: auto;  
+}
+
+.main-carousel{
+padding-top: 50px;
+}
+
+.carousel-cell{
+  width:100%;
+  height: auto;
+  
+}
+
+/*prev-next buttons*/
+/* smaller, dark, rounded square */
+.flickity-button {
+  background: transparent;
+}
+.flickity-button:hover {
+  background: transparent;
+}
+
+.flickity-prev-next-button {
+  width: 60px;
+  height: 60px;
+  border-radius: 5px;
+
+}
+/* icon color */
+.flickity-button-icon {
+  fill: black;
+}
+.flickity-page-dots {
+  visibility: hidden;
+}
+
+@media screen and (max-width: 600px) {
+  img {
+ max-width: 60%;
+ height: auto;
+  }
+  .flickity-prev-next-button.previous {
+  left: -20px;
+}
+.flickity-prev-next-button.next {
+  right: -20px;
+}
+}
+
+
+
