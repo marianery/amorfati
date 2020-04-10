@@ -57,7 +57,9 @@
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }
-
+.closebtn {
+font-family:"黑體-繁", "頻方-繁", "Heiti TC";
+}
 p{
   position: absolute;
   top: 10;
