@@ -73,10 +73,6 @@ src: local('Chub Gothic Regular'), url('chubgothic_1.woff') format('woff');
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}
 .openbtn{
   font-size: 18px;
   font-family: Chub Gothic Regular;
@@ -204,6 +200,13 @@ img {
   text-decoration: none;
   cursor: pointer;
 }
+@media screen and ( min-width: 2000px ) {
+	.sidenav a {
+		font-size: 2em;
+	}
+
+}
+	
 @media screen and ( min-width: 550px ) {
 .mobiletitle{
 	display: none !important;
