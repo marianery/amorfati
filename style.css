@@ -200,7 +200,7 @@ img {
   text-decoration: none;
   cursor: pointer;
 }
-@media screen and ( min-width: 2000px ) {
+@media screen and ( min-width: 1700px ) {
 	.sidenav a {
 		font-size: 20pt !important;
 	}
