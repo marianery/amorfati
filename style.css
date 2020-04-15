@@ -1,7 +1,13 @@
+@font-face {
+font-family: 'Chub Gothic Regular';
+font-style: normal;
+font-weight: normal;
+src: local('Chub Gothic Regular'), url('chubgothic_1.woff') format('woff');
+}
 /* The side navigation menu */
 .sidenav {
   height: 100%; /* 100% Full-height */
-  width: 0; /* 0 width - change this with JavaScript */
+  width: 45%; /* 0 width - change this with JavaScript */
   position: fixed; /* Stay in place */
   z-index: 1; /* Stay on top */
   top: 0; /* Stay at the top */
@@ -9,25 +15,26 @@
   background-color: white; /* Black*/
   overflow-x: hidden; /* Disable horizontal scroll */
   padding-top: 60px; /* Place content 60px from the top */
-  transition: ; /* 0.5 second transition effect to slide in the sidenav */
-  border-right: 1px solid;
-  
+  transition: 0.4s; /* 0.5 second transition effect to slide in the sidenav */
+  border-right: 1px solid rgba(0,0,0,0.5);
 }
 
 /* The navigation menu links */
 .sidenav a {
-  padding: 8px 8px 8px 32px;
+  height: auto;
+  padding: 15px 15px 15px 32px;
   text-decoration: none;
-  font-size: 25px;
   color: #818181;
   display: block;
   position: absolute;
-  transition: 0s;
   color:black;
-  padding:20px;
-  font-family: geneva;
-  font-size: 8pt;
-
+  padding-left: 80px;
+  padding-top: 40px;
+  padding-right: 110px;
+  font-family: Geneva;
+  font-size: 7.5pt;
+  line-height: 11.5pt;
+  transition: 0.5s;
 }
 
 /* When you mouse over the navigation links, change their color */
@@ -36,20 +43,33 @@
 
 /* Position and style the close button (top right corner) */
 .sidenav .closebtn {
+  width: 200px;	
   position: absolute;
   top: 0;
   left: 0px;
-  font-size: 12px;
-  font-family: Geneva;
-  text-decoration: underline;
-  font-weight: 900;
+  font-size: 18px;
+  font-family: Chub Gothic Regular;
+  font-weight: 500;
+  padding-top:44px;
+  padding-left:52px;
   
+}
+.sidenav .closebtn:hover {
+	color: red;
+}
+
+
+.sidenav .link:hover {
+	color: red;
 }
 
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
 #main {
   transition: margin-left .5s;
-  padding: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  text-align: center;
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
@@ -57,20 +77,20 @@
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }
-.closebtn {
-font-family:"黑體-繁", "頻方-繁", "Heiti TC";
+.openbtn{
+  font-size: 18px;
+  font-family: Chub Gothic Regular;
+  font-weight: 500;
+  padding-left: 44px;
+  padding-top: 34px;
+  display: inline-block;
+
 }
-p{
-  position: absolute;
-  top: 10;
-  left: 20px;
-  font-size: 12px;
-  font-family: Geneva;
-  font-weight: 900;
+.openbtn:hover {
+  color: red;
+
 }
-#main {
-  text-align: center;
-}
+
 
 /*flickity-stuff*/
 
@@ -81,12 +101,13 @@ html {
    box-sizing: inherit;
  }
 img {
- max-width: 30%;
+ max-width: 36%;
  height: auto;  
 }
 
-.main-carousel{
-padding-top: 50px;
+.main-carousel:after {
+  content: 'flickity';
+  display: none;
 }
 
 .carousel-cell{
@@ -99,37 +120,184 @@ padding-top: 50px;
 /* smaller, dark, rounded square */
 .flickity-button {
   background: transparent;
+  width:80px;
+  height:150px; 
 }
 .flickity-button:hover {
   background: transparent;
 }
 
 .flickity-prev-next-button {
-  width: 60px;
-  height: 60px;
+  width: 410px;
+  height: 390px;
   border-radius: 5px;
-
 }
 /* icon color */
 .flickity-button-icon {
-  fill: black;
+  fill: transparent;
 }
 .flickity-page-dots {
   visibility: hidden;
 }
-
-@media screen and (max-width: 600px) {
-  img {
- max-width: 60%;
- height: auto;
-  }
-  .flickity-prev-next-button.previous {
-  left: -20px;
+.flickity-prev-next-button.previous {
+ cursor: url(arrowright.png) 20 20, pointer !important;
+ left: 25px;
 }
 .flickity-prev-next-button.next {
-  right: -20px;
+ cursor: url(arrowleft.png) 20 20, pointer !important;
+ right: 25px;
+}
+
+.flickity-enabled.is-draggable .flickity-viewport {
+  cursor: default;
+  cursor: -webkit-default;
+  cursor: default;
+}
+
+.flickity-enabled.is-draggable .flickity-viewport.is-pointer-down {
+  cursor: -webkit-default;
+  cursor: default;
+}
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 31px; /* Location of the box */
+  left: -5.5px;
+  top: 0;
+  width: 45%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: white; /* Fallback color */
+  background-color: transparent; /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: white;
+  margin: auto;
+  width: 80%; 
+}
+.modal-content p  {
+  color: black;
+  padding-left: 38px;
+  padding-top: 67px;
+  padding-right: 90px;
+  font-family: Geneva;
+  font-weight: 300;
+  font-size: 8pt;
+  line-height: 12pt;
+}
+/* The Close Button */
+.close {
+  color: black;
+  float: left;
+  font-size: 18px;
+  font-family: Chub Gothic Regular;
+  font-weight: 500;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  text-decoration: none;
+  cursor: pointer;
+}
+@media screen and ( min-width: 550px ) {
+.mobiletitle{
+	display: none !important;
+}
+.mobilearrow{
+	display: none !important;
 }
 }
 
+@media screen and ( max-width: 500px ) {
+  /* disable Flickity for large devices */
+  .main-carousel:after {
+    content: '';
+  }
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 100%; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: yellow; /* Black*/
+  padding-top: 0px; /* Place content 60px from the top */
+  transition: 0.4s; /* 0.5 second transition effect to slide in the sidenav */
+}
+.sidenav a {
+  height: auto;
+  text-decoration: none;
+  color: #818181;
+  display: block;
+  position: absolute;
+  color:black;
+  padding-left: 80px;
+  padding-top: 100px;
+  padding-right: 110px;
+  padding-bottom: 200px;
+  font-family: Geneva;
+  font-size: 7.5pt;
+  line-height: 11.5pt;
+  transition: 0.5s;
+}
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  top: 0;
+  left: 0;
+  padding-top: 31px; /* Location of the box */
+  left: 2px;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: scroll; /* Enable scroll if needed */
+  background-color: white; /* Fallback color */
+  background-color: white; /* Black w/ opacity */
+}
 
+/* Modal Content */
+.modal-content {
+  background-color: white;
+  margin: auto;
+  width: 80%; 
+}
+.modal-content p  {
+  color: black;
+  padding-left: 38px;
+  padding-top: 67px;
+  padding-right: 90px;
+  padding-bottom: 70px;
+  font-family: Geneva;
+  font-weight: 300;
+  font-size: 8pt;
+  line-height: 12pt;
+}
+.closebtn {
+  display: none !important;
+}
+.mobiletitle{
+  width: 200px;	
+  position: absolute;
+  top: 0;
+  left: 0px;
+  font-size: 18px !important;
+  font-family: Chub Gothic Regular !important;
+  font-weight: 500;
+  padding-top:44px !important;
+  padding-left:52px !important;
+}
+.mobilearrow {
+  position: absolute;
+  z-index: 1;
+  bottom: -150px;
+  right:86px;
+  width: 50px;
+}
+}
 
