@@ -32,8 +32,8 @@ src: local('Chub Gothic Regular'), url('chubgothic_1.woff') format('woff');
   padding-top: 40px;
   padding-right: 110px;
   font-family: Geneva;
-  font-size: 7.5pt;
-  line-height: 11.5pt;
+  font-size: 9pt;
+  line-height: 13pt;
   transition: 0.5s;
 }
 
