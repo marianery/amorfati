@@ -9,7 +9,7 @@ function openNav() {
 function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
   document.getElementById("mySidenav").style.border = "0px solid";
-  document.getElementById("myText").style.width = "386px";
+  document.getElementById("myText").style.width = "70%";
   modal.style.display = "none";
 }
 
