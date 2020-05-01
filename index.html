@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="UTF-8">
+		<title>AMOR FATI</title>
+		<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<a class="title" onclick="topFunction(); openWeb()">AMOR FATI</a>
+		<a class="openarrow" onclick="topFunction(); openWeb()"><img src="mobilearrowtop.png"></a>
+
+     <!--ONLOAD-->     
+
+  <!--FOLLOWING CLICKS-->  
+
+		<div class="modal" id="amorfati">
+    	<div id="text" class="modal-container">
+        <div id="language">
+          <summary><p onclick="portuguese();">pt&nbsp;&nbsp;</p></summary>
+          <summary><p onclick="english();">en</p></summary>
+        </div>
+				<a class="closetitle" onclick="closeWeb()">AMOR FATI</a>
+        <a class="closetitle-mobile">AMOR FATI</a>
+        <div id="thankyoupage">
+          <a onclick="closeThanks()" class="closetitle">AMOR FATI</a>
+          <p class="en"><b>Thanks:</b> Margarida Pereira, Alzira Pereira, Carlos Nascimento, Clotilde Abrantes, Marco Paiva, Francisco Paiva, Henrique Martins, Sara Martins, Anabela Ferro, Amy, José Luís Mesquita, José Inácio, Pedro Azevedo, Guilherme de Sousa, Sara Costa, Roberto Costa, Simão Telles, Ary, Volpina Castilho, Igrat Castilho, João Galego, Olivia Rodrigues, Inês Jacob, Ricardo Jacob, Nory Sabina, Elisa Lasprilla, Diogo Friaes Coelho, Ginja, Adelino Ângelo, La-Salett Magalhães, Emmanuel, Amigo, Vera Matias, Inês Pando, Zezé Cordeiro, Maria Salomé Alvarenga, Catarina Garcia, Guilherme Garcia, Nela Duarte, Jericó, Maria, Nuno, Cristina Sampaio, Zebá, Heloise Marechal, Margarida, Simon Saleh-Hughes, Ginja, Natacha Cordeiro, Licínia Ferreira, Carla Vendas, Pedro Vendas, Diana, Nelson, Ângelo Ferreira, Bliss, Maria Manuela, Inês Campos, Teresa Melo e Campos, Levon Mouradian, Nariné Dellalian, Simão Pais, Oito, Maria Trindade, Conceição Trindade,  Raffat Dabah, Fatima Ghannam, Luísa Louro, Miguel Morato, Maria Neto, Henrique Neto, Ringo Nogueira, Carla Monteiro, Ana Carvalho, Lucinda Piloto, Duarte Lopes, Setembro, Jorge Fernandes, Ernesto, Julia Valente, Mateus Mateus, Rita Isabel, Irina Pereira, Maria de Lurdes Arriscado, Maria Isabel, Raphael Decoster, António de Miranda, Tomás Miranda, António Godinho, Maria Teresa Godinho, João Godinho, António Manuel Godinho, Antónia Garcia, Samira Garcia, Jenny Garcia, Vera Prokic, Mateus, Carlos Santos, Kika, Domingas Santos, João Luís Tomás, Rita Amaro, Rafael Baptista, Ana Ventura, Maria Ventura, Ivone Paim, Ice, Conceição Correia de Barros, Eugénia Sá Coutinho, Tatiana Grenkova, Oxana Grenkova, Miguel Canto e Castro, Teresa Canto e Castro, Sádio, Lassana, Seni, Hugo Nunes, Marco Nunes, Luisa Monteiro Guerra, Ringo, Ana Pires, Inês Pires, Pedro Andrade, Tibério Bento.</p>
+          <p class="pt invisible"><b>Obrigada:</b> Margarida Pereira, Alzira Pereira, Carlos Nascimento, Clotilde Abrantes, Marco Paiva, Francisco Paiva, Henrique Martins, Sara Martins, Anabela Ferro, Amy, José Luís Mesquita, José Inácio, Pedro Azevedo, Guilherme de Sousa, Sara Costa, Roberto Costa, Simão Telles, Ary, Volpina Castilho, Igrat Castilho, João Galego, Olivia Rodrigues, Inês Jacob, Ricardo Jacob, Nory Sabina, Elisa Lasprilla, Diogo Friaes Coelho, Ginja, Adelino Ângelo, La-Salett Magalhães, Emmanuel, Amigo, Vera Matias, Inês Pando, Zezé Cordeiro, Maria Salomé Alvarenga, Catarina Garcia, Guilherme Garcia, Nela Duarte, Jericó, Maria, Nuno, Cristina Sampaio, Zebá, Heloise Marechal, Margarida, Simon Saleh-Hughes, Ginja, Natacha Cordeiro, Licínia Ferreira, Carla Vendas, Pedro Vendas, Diana, Nelson, Ângelo Ferreira, Bliss, Maria Manuela, Inês Campos, Teresa Melo e Campos, Levon Mouradian, Nariné Dellalian, Simão Pais, Oito, Maria Trindade, Conceição Trindade,  Raffat Dabah, Fatima Ghannam, Luísa Louro, Miguel Morato, Maria Neto, Henrique Neto, Ringo Nogueira, Carla Monteiro, Ana Carvalho, Lucinda Piloto, Duarte Lopes, Setembro, Jorge Fernandes, Ernesto, Julia Valente, Mateus Mateus, Rita Isabel, Irina Pereira, Maria de Lurdes Arriscado, Maria Isabel, Raphael Decoster, António de Miranda, Tomás Miranda, António Godinho, Maria Teresa Godinho, João Godinho, António Manuel Godinho, Antónia Garcia, Samira Garcia, Jenny Garcia, Vera Prokic, Mateus, Carlos Santos, Kika, Domingas Santos, João Luís Tomás, Rita Amaro, Rafael Baptista, Ana Ventura, Maria Ventura, Ivone Paim, Ice, Conceição Correia de Barros, Eugénia Sá Coutinho, Tatiana Grenkova, Oxana Grenkova, Miguel Canto e Castro, Teresa Canto e Castro, Sádio, Lassana, Seni, Hugo Nunes, Marco Nunes, Luisa Monteiro Guerra, Ringo, Ana Pires, Inês Pires, Pedro Andrade, Tibério Bento.</p>
+    </div>
+				<p class="en">a film by <b style="letter-spacing: 0.08em;">CLÁUDIA VAREJÃO</b><br><br>
+					Aristophanes, in his speech at The Symposium, presents us with his vision of love: at the moment when human beings first existed they had a single body, with four legs, four arms and two faces. These beings were fundamentally safe and invincible, to the point of defying the gods and trying to ascend to the heavens. Zeus, feeling threatened, throws a bolt of lightning that divided them in two halves: on each side were new beings with two legs, two arms, one face and one gender. Since that day, on land, the two halves have been constantly searching for each other.
+					<br><br>
+					The aim of <b>Amor Fati</b> is to seek out these halves that, today, have converged again, as though they were chemical elements attracted in the same direction. The present is a moment of destiny in which the parts merge without allowing themselves to be unduly influenced by common sense: they are creatures of intuition. They do not long to be in any other place, have no desire for a different future or past. For two years I searched, in Portugal from north to south, for stories of unshakable love that were expressed, at first glance, in the similarity of physiognomies. I met with hundreds of peers and groups who were right at that moment living stories of rare bonding.
+					<br><br>
+					The research resulted in a film (produced by <a href="http://www.terratreme.pt" target="_blank"><b>Terratreme</b></a>, <a href="https://mirafilm.ch/en/" target="_blank"><b>Mira Film</b></a> and <a href=" http://labelleaffaire.net" target="_blank"><b>La Belle Affaire</b></a>). I tried to build a choral side of life, in which the singular gives way to the plural and the micro to the macro. During this process of looking for - and to find - characters, I kept some faces and stories with me. The following photographs are part of that collection and are my affection atlas. To all the people who shared with me a little of their intimacy, my deepest <a class="thankyou" onclick="openThanks()"><b>thanks</b></a>.
+					<br><br>
+					This project is a constellation of stories and emotions that express my feeling for humanity which tends to become magnifed in the face of our vulnerability and in the face of death. Creating images is my attempt to overcome the ephemerality of events by incorporating something bigger and more beautiful, like the mystery of encounters.
+
+      <p class="pt invisible">um filme de <b style="letter-spacing: 0.08em;">CLÁUDIA VAREJÃO</b><br><br>
+          Aristófanes, no seu discurso n’O Banquete, apresenta-nos a sua visão sobre o amor: na origem do ser humano estaria um corpo uno, com quatro pernas, quatro braços e dois rostos. Eram seres seguros e invencíveis, ao ponto de desafiarem os deuses e tentarem ascender aos céus. Zeus, sentindo-se ameaçado, lançou um raio que os dividiu em metades: para cada lado ficaram dois novos seres, com duas pernas, dois braços, um rosto e um sexo. Desde esse dia, em terra, as metades procuram, sem cessar, umas pelas outras.
+          <br><br>
+          <b>Amor Fati</b> propõe irmos ao encontro dessas metades que voltaram a convergir, como se fossem elementos químicos atraídos na mesma direcção. O instante presente é um fatum onde as partes se encontram sem se deixarem tomar pela razão: pertencem-se por intuição. Não desejam ocupar outro lugar, outro futuro, outro passado. Durante dois anos procurei em Portugal, de norte a sul, por histórias de amores inabaláveis que se expressavam, à primeira vista, em fisionomias semelhantes. Encontrei-me com centenas de pares e de grupos que viviam, no momento presente, histórias de enlace raro. 
+          <br><br>
+          A investigação resultou num filme (produzido pela <a href="http://www.terratreme.pt" target="_blank"><b>Terratreme</b></a>, <a href="https://mirafilm.ch/en/" target="_blank"><b>Mira Film</b></a> e <a href=" http://labelleaffaire.net" target="_blank"><b>La Belle Affaire</b></a>). Procurei construir um lado coral da vida, em que o singular deu lugar ao plural e o micro ao macro. Durante este processo de procura - e de encontro - de personagens, fui guardando comigo alguns rostos e histórias. As fotografias que se seguem fazem parte dessa recolha e são o meu atlas de afectos. A todas as pessoas que partilharam comigo um pouco da sua intimidade, o meu profundo <a class="thankyou" onclick="openThanks()"><b>obrigada.</b></a>
+          <br><br>
+          Este projecto é uma constelação de histórias e de emoções que expressam o meu sentimento pela humanidade, que tende a engrandecer diante da nossa vulnerabilidade e diante da morte. Criar imagens é a minha tentativa de superar a efemeridade dos eventos, incorporando algo maior, como o mistério dos encontros.
+
+   
+      </p>
+			<a class="closearrow" onclick="closeThanks(); closeMobile()"><img src="mobilearrow.png"></a>
+				</div>     
+		</div>
+
+
+  <a onclick="closeThanks(); closeWeb()"><div id="main">		
+  <div class="main-carousel">
+  <div class="carousel-cell" >
+    <img src="images/01.jpg" class="horizontal">
+    </div>
+  <div class="carousel-cell">
+    <img src="images/02.jpg" class="horizontal">
+    </div> 
+  <div class="carousel-cell">
+    <img src="images/03.jpg" class="horizontal">
+    </div> 
+  <div class="carousel-cell">
+    <img src="images/04.jpg" class="horizontal">
+    </div> 
+  <div class="carousel-cell">
+    <img src="images/05.jpg" class="horizontal">
+    </div> 
+  <div class="carousel-cell">
+    <img src="images/06.jpg">
+    </div>   
+  <div class="carousel-cell">
+    <img src="images/07.jpg" class="horizontal">
+    </div>
+  <div class="carousel-cell">
+    <img src="images/08.jpg" class="horizontal">
+    </div>
+  <div class="carousel-cell">
+    <img src="images/09.jpg" class="horizontal">
+    </div> 
+  <div class="carousel-cell">
+    <img src="images/10.jpg" class="horizontal">
+    </div>
+  <div class="carousel-cell">
+    <img src="images/11.jpg" class="horizontal">
+    </div> 
+  <div class="carousel-cell">
+    <img src="images/12.jpg" class="horizontal">
+    </div>
+  <div class="carousel-cell">
+    <img src="images/13.jpg">
+    </div>
+  <div class="carousel-cell">
+    <img src="images/14.jpg" class="horizontal">
+    </div>
+  <div class="carousel-cell">
+    <img src="images/15.jpg" class="horizontal">
+    </div> 
+  <div class="carousel-cell">
+    <img src="images/16.jpg">
+    </div>
+   <div class="carousel-cell">
+    <img src="images/17.jpg" class="horizontal">
+    </div> 
+   <div class="carousel-cell">
+    <img src="images/18.jpg" class="horizontal">
+    </div>
+   <div class="carousel-cell">
+    <img src="images/19.jpg">
+    </div> 
+   <div class="carousel-cell">
+    <img src="images/20.jpg" class="horizontal">
+    </div> 
+  <div class="carousel-cell">
+    <img src="images/21.jpg" class="horizontal">
+    </div>
+  <div class="carousel-cell">
+    <img src="images/22.jpg" class="horizontal">
+    </div>
+  <div class="carousel-cell">
+    <img src="images/23.jpg" class="horizontal">
+    </div>
+  <div class="carousel-cell">
+    <img src="images/24.jpg" class="horizontal">
+    </div> 
+  <div class="carousel-cell">
+    <img src="images/25.jpg" class="horizontal">
+    </div> 
+  <div class="carousel-cell">
+    <img src="images/26.jpg" class="horizontal">
+    </div> 
+  <div class="carousel-cell">
+    <img src="images/27.jpg" class="horizontal">
+    </div> 
+  <div class="carousel-cell">
+    <img src="images/28.jpg" class="horizontal">
+    </div>  
+  <div class="carousel-cell">
+    <img src="images/29.jpg" class="horizontal">
+    </div>
+  <div class="carousel-cell">
+    <img src="images/30.jpg">
+    </div>
+  <div class="carousel-cell">
+    <img src="images/31.jpg" class="horizontal">
+    </div>
+  <div class="carousel-cell">
+    <img src="images/32.jpg" class="horizontal">
+    </div>
+  <div class="carousel-cell">
+    <img src="images/33.jpg" class="horizontal">
+    </div> 
+  <div class="carousel-cell">
+    <img src="images/34.jpg" class="horizontal">
+    </div> 
+  <div class="carousel-cell">
+    <img src="images/35.jpg" class="horizontal">
+    </div>
+  <div class="carousel-cell">
+    <img src="images/36.jpg">
+    </div>        
+  <div class="carousel-cell">
+    <img src="images/37.jpg" class="horizontal">
+    </div> 
+  <div class="carousel-cell">
+    <img src="images/38.jpg" class="horizontal">
+    </div>
+  <div class="carousel-cell">
+    <img src="images/39.jpg" class="horizontal">
+    </div>
+  <div class="carousel-cell">
+    <img src="images/40.jpg" class="horizontal">
+    </div>
+  <div class="carousel-cell">
+    <img src="images/41.jpg" class="horizontal">
+    </div>
+  <div class="carousel-cell">
+    <img src="images/42.jpg" class="horizontal">
+    </div>
+  <div class="carousel-cell">
+    <img src="images/43.jpg" class="horizontal">
+    </div>
+  <div class="carousel-cell">
+    <img src="images/44.jpg" class="horizontal">
+    </div>
+  <div class="carousel-cell">
+    <img src="images/45.jpg" class="horizontal">
+    </div>
+  <div class="carousel-cell">
+    <img src="images/46.jpg" class="horizontal">
+    </div>
+  <div class="carousel-cell">
+    <img src="images/47.jpg">
+    </div>
+  <div class="carousel-cell">
+    <img src="images/48.jpg" class="horizontal">
+    </div>
+  <div class="carousel-cell">
+    <img src="images/49.jpg" class="horizontal">
+    </div>
+  <div class="carousel-cell">
+    <img src="images/50.jpg" class="horizontal">
+    </div>
+  <div class="carousel-cell">
+    <img src="images/51.jpg" class="horizontal">
+    </div>
+  <div class="carousel-cell">
+    <img src="images/52.jpg" class="horizontal">
+    </div>
+  <div class="carousel-cell">
+    <img src="images/53.jpg" class="horizontal">
+    </div>
+  <div class="carousel-cell">
+    <img src="images/54.jpg" class="horizontal">
+    </div>
+  <div class="carousel-cell">
+    <img src="images/55.jpg" class="horizontal">
+    </div> 
+  <div class="carousel-cell">
+    <img src="images/56.jpg">
+    </div>
+  <div class="carousel-cell">
+    <img src="images/57.jpg" class="horizontal">
+    </div> 
+  <div class="carousel-cell">
+    <img src="images/58.jpg" class="horizontal">
+    </div>
+  <div class="carousel-cell">
+    <img src="images/59.jpg" class="horizontal">
+    </div> 
+  <div class="carousel-cell">
+    <img src="images/60.jpg" class="horizontal">
+    </div>  
+  <div class="carousel-cell">
+    <img src="images/61.jpg" class="horizontal">
+    </div>
+  <div class="carousel-cell">
+    <img src="images/62.jpg" class="horizontal">
+    </div>
+  <div class="carousel-cell">
+    <img src="images/63.jpg" class="horizontal">
+    </div> 
+  <div class="carousel-cell">
+    <img src="images/64.jpg" class="horizontal">
+    </div>                                              
+</div>
+</div></a>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+<script src='https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js'></script><script  src="./script.js"></script><script  src="./language.js"></script>
+	</body>
